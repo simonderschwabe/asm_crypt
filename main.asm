@@ -114,7 +114,7 @@ _start:
 
 exit:
 	mov eax, 1
-	mov ebx, [ebp+8]
+	mov ebx, 0 
 	int 0x80
 
 exit_error:

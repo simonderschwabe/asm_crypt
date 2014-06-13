@@ -18,6 +18,7 @@ Have fun.
 Currently supported OS:
 
 	linux - i686
+	linux - x86_64
 
 # Requirements
 

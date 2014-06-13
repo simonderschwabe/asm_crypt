@@ -5,10 +5,10 @@ OBJECTS = $(SOURCES:.asm=.o)
 TARGETS = asm_crypt
 
 %.o : %.asm
-	as -o $@ $<
+	as --32 -o $@ $<
 
 all: $(TARGETS)
 
 asm_crypt: $(OBJECTS)
-	ld -o $@ $^
+	ld -melf_i386 -o $@ $^
 	rm *.o
